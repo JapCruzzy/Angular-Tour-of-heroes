@@ -9,6 +9,9 @@ export class MessagesService {
   add(message: string) {
     this.messages.push(message);
   }
+  remove(){
+    this.messages.pop();
+  }
   clear() {
     this.messages = [];
   }
